@@ -1,2 +1,2 @@
-define [], ->
-  ->
+define [], -> ->
+  console.log 'hello, coffee!'
