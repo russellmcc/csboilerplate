@@ -30,6 +30,12 @@ define [], ->
       (v) ->
         Math.pow(base, v * (logmax - logmin) + logmin)
 
+    @arrayIndex: (arr) -> (v) ->
+      v *= arr.length
+      v = ~~v
+      v = arr.length - 1 if v >= arr.length
+      arr[v]
+
     # binds a parameter with an associated "range" knob
     bindRange: (baseParam, rangeParam, audioParam, ranges, baseScale) ->
       baseScale ?= (v) -> v
