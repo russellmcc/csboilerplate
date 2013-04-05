@@ -1,4 +1,4 @@
-define ['cs!preset'], (Preset)->
+define ['cs!./preset'], (Preset)->
   Preset.extend
     initialize: ->
       Preset.prototype.initialize
